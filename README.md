@@ -42,7 +42,34 @@ A futuristic, responsive weather web app built using **HTML, CSS, JavaScript, Py
 
 ## ⚙️ Setup & Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/weather-forecast-app.git
-   cd weather-forecast-app
+Follow these steps to run the application locally:
+
+### ✅ Step 1: Activate the virtual environment
+
+If you've already created a virtual environment named `env`, activate it:
+
+- On **Windows**:
+  ```bash
+  env\Scripts\activate
+- On **Macos/Linux**:
+  ```bash
+  source env/bin/activate
+### ✅ Step 2: Install the requrements
+
+Run the following command :
+-On terminal ```bash
+  pip install -r requirements.txt
+  
+### ✅ Step 3: 
+- Run the application : 
+  ```bash
+  python app.py
+
+ 🙌 Credits
+Powered by Sanat Pillai
+
+Built with 💙 using Flask and HTML CSS JS
+
+UI inspired by futuristic design patterns and glassmorphism
+
+

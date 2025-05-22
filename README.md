@@ -57,9 +57,10 @@ If you've already created a virtual environment named `env`, activate it:
 ### ✅ Step 2: Install the requrements
 
 Run the following command :
--On terminal ```bash
+- On **Terminal**:
+  ```bash
   pip install -r requirements.txt
-  
+ 
 ### ✅ Step 3: 
 - Run the application : 
   ```bash

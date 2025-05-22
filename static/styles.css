@@ -1,0 +1,129 @@
+/* Enhanced styles.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: #f4f4f4;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin: 0;
+  color: #ffffff;
+}
+
+input[type="text"] {
+  padding: 12px 15px;
+  width: 80%;
+  max-width: 400px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  padding: 10px 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #00b4db;
+  background-image: linear-gradient(to right, #0083b0, #00b4db);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, #0072a3, #00a4c4);
+}
+
+.screen {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+}
+
+.screen h2 {
+  color: #ffffff;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ffffff33;
+  padding-bottom: 5px;
+}
+
+#forecastCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.card h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #e0f7fa;
+}
+
+#searchHistory {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#searchHistory li button {
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s ease;
+}
+
+#searchHistory li button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

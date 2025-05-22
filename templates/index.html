@@ -1,0 +1,35 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Forecast App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Weather Forecast</h1>
+      <input type="text" id="cityInput" placeholder="Enter city name" />
+      <button id="searchBtn">Search</button>
+    </header>
+    <section id="weatherOverview" class="screen">
+      <h2>Current Weather</h2>
+      <div id="currentWeather"></div>
+    </section>
+
+    <section id="forecast" class="screen">
+      <h2>5-Day Forecast</h2>
+      <div id="forecastCards"></div>
+    </section>
+
+    <section id="history" class="screen">
+      <h2>Search History</h2>
+      <ul id="searchHistory"></ul>
+    </section>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
